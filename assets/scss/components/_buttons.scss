@@ -1,0 +1,14 @@
+button{
+    border: 1px solid black;
+    padding: 10 20px;
+}
+.btn-succes{
+    @extend button;
+    color: $reng1;
+    background-color: $reng3;
+}
+.btn-error{
+    @extend button;
+    color: $reng3;
+    background-color: $reng4;
+}

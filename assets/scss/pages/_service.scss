@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#service {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-image: url(https://ae01.alicdn.com/kf/S0f687a301e404c7ca6a6ec45ed60da5dt/18-ekiller-150-280ml-Retro-kabartma-kadeh-kabartmal-viski-k-rm-z-arap-ampanya-kadehi-klasik.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .textrow {
+        text-align: center;
+        padding: 50px 0;
+
+        hr {
+            background-color: rgb(244, 98, 58);
+            width: 80px;
+            margin: 20px auto;
+            border-radius: 10px;
+            height: 3px;
+        }
+    }
+
+    .boxrow {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        padding: 20px 0;
+        height: fit-content;
+        background-color: transparent;
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 25%;
+            padding: 20px 0;
+            text-align: center;
+            background-color: white;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+            .icon {
+                font-size: 40px;
+                color: rgb(244, 98, 58);
+            }
+
+            .boxtext {
+                width: 80%;
+                margin: auto;
+                p{
+                    font-size: 20px;
+                    color: gray;
+                }
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    #service {
+        .boxrow {
+            flex-wrap: wrap;
+
+            .box {
+                width: 100%;
+                transition: 0.5s;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 993px) {
+    #service {
+        .boxrow {
+            flex-wrap: wrap;
+
+            .box {
+                width: 50%;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 994px) {
+    #service {
+        .boxrow {
+            flex-wrap: wrap;
+
+            .box {
+                width: 25%;
+                transition: 0.5s;
+            }
+        }
+    }
+}

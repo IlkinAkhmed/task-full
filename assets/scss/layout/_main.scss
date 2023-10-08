@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0) 30%, rgba(92, 77, 66, 0.6) 40%), url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/bg-masthead.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    .maintext {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 40%;
+
+        .favorite {
+            text-align: center;
+            margin: auto;
+            width: 100%;
+
+            h1 {
+                color: white;
+            }
+
+            hr {
+                background-color: rgb(244, 98, 58);
+                width: 100px;
+                margin: 20px auto;
+                border-radius: 10px;
+                height: 2px;
+            }
+        }
+
+        .find {
+            text-align: center;
+            display: flex;
+            width: 100%;
+            flex-flow: column;
+            gap: 30px;
+            align-items: center;
+
+            h3 {
+                color: white;
+            }
+
+            a {
+                border: 1px solid black;
+                border-radius: 40px;
+                padding: 20px 40px;
+                text-align: center;
+                width: 126px;
+                color: white;
+                background-color: rgb(244, 98, 58);
+                transition: 0.5s;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            }
+            a:hover{
+                background-color: rgb(179, 171, 171);
+                color: black;
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
+        }
+    }
+}
